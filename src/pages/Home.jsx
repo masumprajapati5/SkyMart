@@ -11,9 +11,7 @@ const Home = () => {
     <main className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
-        {/* Top Hero Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 border border-neutral-300 bg-white overflow-hidden mb-16">
-          {/* Left Column */}
           <div className="flex flex-col justify-center items-start p-8 sm:p-14 lg:p-20 bg-white">
             <div className="flex items-center gap-2 mb-2">
               <span className="w-8 sm:w-11 h-[1.5px] bg-neutral-800 inline-block"></span>
@@ -35,7 +33,6 @@ const Home = () => {
             </NavLink>
           </div>
 
-          {/* Right Column (Hero Image) */}
           <div className="w-full h-full min-h-[360px] sm:min-h-[440px] bg-neutral-100 overflow-hidden flex items-center justify-center">
             <img
               src="/hero.jpg"
@@ -45,7 +42,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Section 1: LATEST COLLECTIONS */}
         <section className="mb-20">
           <div className="text-center my-14">
             <div className="inline-flex items-center gap-2">
@@ -79,7 +75,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Section 2: BEST SELLERS */}
         <section className="mb-24">
           <div className="text-center my-14">
             <div className="inline-flex items-center gap-2">
@@ -113,7 +108,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Section 3: Policy / Guarantee Badges */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center py-16 border-t border-neutral-200 mb-16">
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 mb-3 flex items-center justify-center text-neutral-800">
@@ -148,7 +142,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Section 4: Ready to shop? CTA Banner */}
         <div className="border border-neutral-300 bg-white p-12 sm:p-16 text-center mb-16">
           <h3 className="font-medium text-2xl sm:text-3xl tracking-tight text-neutral-900 mb-2">
             Ready to shop?
