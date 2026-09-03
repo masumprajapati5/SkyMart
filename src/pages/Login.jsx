@@ -32,10 +32,8 @@ const Login = ({ users }) => {
 
   return (
     <div className="min-h-screen bg-white flex flex-col lg:flex-row">
-      {/* Left editorial banner with pure luxury minimalism */}
       <div className="w-full lg:w-1/2 min-h-[380px] lg:min-h-screen relative bg-neutral-950 overflow-hidden flex flex-col justify-between p-8 sm:p-12 lg:p-16 text-white">
         
-        {/* Background Image with Dark Vignette */}
         <img
           src="/auth-bg.jpg"
           alt="SkyMart Editorial Showcase"
@@ -43,7 +41,6 @@ const Login = ({ users }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/30 to-neutral-950/60" />
 
-        {/* Top Branding */}
         <NavLink to="/" className="flex items-center gap-2.5 relative z-10 w-fit group">
           <img src="/favicon.svg" alt="SkyMart" className="w-7 h-7 shrink-0" />
           <span className="font-semibold text-lg tracking-tight text-white group-hover:text-neutral-200 transition-colors">
@@ -51,7 +48,6 @@ const Login = ({ users }) => {
           </span>
         </NavLink>
 
-        {/* Lower Minimalist Statement */}
         <div className="relative z-10 max-w-sm mt-auto mb-6">
           <p className="text-[11px] uppercase tracking-[0.25em] text-neutral-400 font-light mb-3">
             The Collection
@@ -61,16 +57,13 @@ const Login = ({ users }) => {
           </h1>
         </div>
 
-        {/* Bottom Edition Tag */}
         <div className="relative z-10 text-[10px] text-neutral-400 uppercase tracking-widest font-light">
           © {new Date().getFullYear()} SKYMART
         </div>
       </div>
 
-      {/* Right sign in form */}
       <div className="flex-1 flex items-center justify-center p-6 sm:p-12 lg:p-16 bg-white min-h-[500px] lg:min-h-screen">
         <div className="w-full max-w-md">
-          {/* Mobile Header Logo */}
           <div className="lg:hidden flex items-center gap-2 mb-8 justify-center">
             <img src="/favicon.svg" alt="SkyMart" className="w-7 h-7 shrink-0" />
             <span className="font-semibold text-lg text-neutral-900">

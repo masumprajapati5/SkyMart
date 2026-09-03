@@ -57,7 +57,6 @@ const Shop = () => {
     <main className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-        {/* Full-Width Top Searchbar (Boxy Style) */}
         <div className="w-full mb-10">
           <div className="flex items-center border border-neutral-300 bg-white px-4 py-1 w-full">
             <input
@@ -85,16 +84,13 @@ const Shop = () => {
           </div>
         </div>
 
-        {/* Main Content Layout (Left Filters + Right Cards) */}
         <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start">
           
-          {/* Left Sidebar: Filters & Dropdowns */}
           <aside className="w-full md:w-60 lg:w-68 shrink-0 space-y-6">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-neutral-900">
               FILTERS
             </h2>
 
-            {/* Box 1: Categories Box */}
             <div className="border border-neutral-300 p-5 bg-white">
               <p className="text-xs font-semibold uppercase tracking-wider text-neutral-900 mb-4">
                 CATEGORIES
@@ -148,7 +144,6 @@ const Shop = () => {
               </div>
             </div>
 
-            {/* Box 2: Dropdown Selects (All Departments + Sort) */}
             <div className="space-y-3">
               <div className="relative border border-neutral-300 bg-white">
                 <select
@@ -209,10 +204,8 @@ const Shop = () => {
 
           </aside>
 
-          {/* Right Main Area: Product Grid */}
           <div className="flex-1 min-w-0 w-full">
             
-            {/* Heading */}
             <div className="flex items-center justify-between mb-8 pb-3">
               <div className="inline-flex items-center gap-2">
                 <h1 className="text-xl sm:text-2xl tracking-widest uppercase">
@@ -226,7 +219,6 @@ const Shop = () => {
               </span>
             </div>
 
-            {/* Products Grid */}
             {filtered.length === 0 ? (
               <div className="border border-neutral-300 p-16 text-center bg-white">
                 <p className="font-medium text-sm uppercase tracking-wider text-neutral-900">No Products Found</p>
