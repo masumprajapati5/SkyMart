@@ -56,11 +56,8 @@ const Details = () => {
   return (
     <main className="min-h-screen bg-white font-['Outfit',sans-serif]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-
-        {/* Product Details Section */}
         <div className="flex flex-col md:flex-row gap-10 lg:gap-16 items-start mb-16">
           
-          {/* Left: Main Product Image (Single Frame, No Thumbnails) */}
           <div className="w-full md:w-1/2 aspect-[4/5] bg-neutral-50 border border-neutral-100 flex items-center justify-center p-8 sm:p-14 overflow-hidden">
             <img
               src={curr.image}
@@ -69,14 +66,12 @@ const Details = () => {
             />
           </div>
 
-          {/* Right: Product Info */}
           <div className="w-full md:w-1/2 flex flex-col gap-5">
             <div>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-serif-luxury font-normal text-neutral-900 leading-tight mb-2">
                 {curr.title}
               </h1>
 
-              {/* Ratings */}
               <div className="flex items-center gap-1.5 my-3">
                 <div className="flex items-center text-[#ff385c]">
                   {Array.from({ length: 5 }).map((_, i) => (
@@ -97,18 +92,15 @@ const Details = () => {
                 <span className="text-xs text-neutral-500 font-light">({curr.rating?.count || 122})</span>
               </div>
 
-              {/* Price */}
               <p className="text-2xl sm:text-3xl font-medium text-neutral-900 mt-4 mb-5">
                 ${curr.price}
               </p>
 
-              {/* Description */}
               <p className="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light mb-6">
                 {curr.description}
               </p>
             </div>
 
-            {/* Add to Cart Button */}
             <div className="pt-2">
               <button
                 onClick={addtocart}
@@ -120,14 +112,12 @@ const Details = () => {
 
             <hr className="border-neutral-200 my-2" />
 
-            {/* Guarantees Checklist */}
             <div className="space-y-1.5 text-xs text-neutral-500 font-light">
               <p>100% Original product.</p>
               <p>Cash on delivery is available on this product.</p>
               <p>Easy return and exchange policy within 7 days.</p>
             </div>
 
-            {/* Previous / Next Navigation Buttons (Boxy Minimalist Theme) */}
             <div className="flex items-center gap-3 pt-4">
               {Number(id) > 1 && (
                 <NavLink
@@ -156,7 +146,6 @@ const Details = () => {
           </div>
         </div>
 
-        {/* RELATED PRODUCTS */}
         {related.length > 0 && (
           <section className="mb-20">
             <div className="text-center my-14">
