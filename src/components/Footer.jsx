@@ -7,7 +7,6 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-10 mb-12">
           
-          {/* Brand Info */}
           <div className="max-w-sm">
             <div className="flex items-center gap-2 mb-4">
               <img src="/favicon.svg" alt="SkyMart" className="w-6 h-6 shrink-0" />
@@ -20,7 +19,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Company Links */}
           <div>
             <h4 className="font-bold text-xs uppercase tracking-widest text-neutral-900 mb-4">
               COMPANY
@@ -41,7 +39,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Get In Touch */}
           <div>
             <h4 className="font-bold text-xs uppercase tracking-widest text-neutral-900 mb-4">
               GET IN TOUCH
@@ -54,7 +51,6 @@ const Footer = () => {
 
         </div>
 
-        {/* Copyright */}
         <div className="border-t border-neutral-200 pt-6 text-center text-xs text-neutral-500 font-light">
           Copyright {new Date().getFullYear()} @ skymart.com - All Rights Reserved.
         </div>
