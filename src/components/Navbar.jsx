@@ -23,14 +23,12 @@ const Navbar = () => {
       <header className="sticky top-0 z-30 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-neutral-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between gap-6">
           
-          {/* Brand Logo */}
           <NavLink className="flex items-center gap-1 shrink-0" to="/">
             <span className="font-semibold text-xl tracking-tight text-neutral-900">
               SKYMART<span className="text-[#e11d48]">.</span>
             </span>
           </NavLink>
 
-          {/* Center Navigation Links (Fixed baseline alignment) */}
           <nav className="hidden md:flex items-center gap-8 lg:gap-10">
             <NavLink
               to="/"
@@ -81,10 +79,8 @@ const Navbar = () => {
             </NavLink>
           </nav>
 
-          {/* Right Action Icons & User */}
           <div className="flex items-center gap-4 sm:gap-6 shrink-0">
             
-            {/* User with Name */}
             {user && (
               <div className="flex items-center gap-1.5 text-neutral-800" title={user.name}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -97,7 +93,6 @@ const Navbar = () => {
               </div>
             )}
 
-            {/* Cart Drawer Trigger */}
             <button
               onClick={() => setIsCartOpen(true)}
               className="relative text-neutral-800 hover:text-black transition-colors cursor-pointer p-1"
@@ -115,7 +110,6 @@ const Navbar = () => {
               )}
             </button>
 
-            {/* Desktop Logout Button */}
             <button
               onClick={handlelogout}
               title="Logout"
@@ -128,7 +122,6 @@ const Navbar = () => {
               </svg>
             </button>
 
-            {/* Mobile Hamburger Toggle */}
             <button
               onClick={() => setIsMenuOpen((prev) => !prev)}
               className="md:hidden text-neutral-800 cursor-pointer p-1"
@@ -153,7 +146,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
           <div className="md:hidden border-t border-neutral-200 px-4 sm:px-6 py-4 flex flex-col gap-1 bg-white">
             <NavLink
@@ -190,7 +182,6 @@ const Navbar = () => {
               ABOUT
             </NavLink>
 
-            {/* Logout Option in Mobile Menu */}
             <button
               onClick={() => {
                 setIsMenuOpen(false);
