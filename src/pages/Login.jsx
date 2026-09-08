@@ -29,7 +29,7 @@ const Login = ({ users }) => {
       navigate("/")
     }
   }
-
+// Login Page UI
   return (
     <div className="min-h-screen bg-white flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/2 min-h-[380px] lg:min-h-screen relative bg-neutral-950 overflow-hidden flex flex-col justify-between p-8 sm:p-12 lg:p-16 text-white">
