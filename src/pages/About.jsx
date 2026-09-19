@@ -29,7 +29,6 @@ const About = () => {
     <main className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-        {/* Page Title */}
         <div className="text-center my-10">
           <div className="inline-flex items-center gap-2">
             <h1 className="text-2xl sm:text-3xl tracking-widest uppercase">
@@ -40,7 +39,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Main Split Section: Image + Description */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 items-center mb-24">
           <div className="w-full aspect-square overflow-hidden bg-neutral-50 border border-neutral-100 flex items-center justify-center">
             <img
