@@ -7,7 +7,6 @@ const Home = () => {
   const { PRODUCTS } = useContext(MyStore)
   const sortratings = sortProducts(PRODUCTS, "price-desc")
 
-  // home page ui 
 
   return (
     <main className="min-h-screen bg-white">
